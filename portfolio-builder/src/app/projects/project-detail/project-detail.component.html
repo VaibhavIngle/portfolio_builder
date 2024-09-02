@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 d-flex align-items-center">
+      <img class="img-fluid rounded shadow"
+        [src]="project?.imageUrl || 'https://via.placeholder.com/500x300?text=No+Image'" alt="Project Image"
+        style="object-fit: cover;">
+    </div>
+    <div class="col-md-6">
+      <h1 class="mb-4">{{ project?.title }}</h1>
+      <p class="lead mb-4">{{ project?.description }}</p>
+      <p class="mb-2"><strong>Technologies:</strong> {{ project?.technologies }}</p>
+      <p class="mb-4"><strong>Category:</strong> {{ project?.category }}</p>
+      <div class="d-flex flex-column">
+        <a [href]="project?.githubLink" class="btn btn-outline-dark mb-2" target="_blank">GitHub</a>
+        <a [href]="project?.liveDemo" class="btn btn-outline-success" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</div>

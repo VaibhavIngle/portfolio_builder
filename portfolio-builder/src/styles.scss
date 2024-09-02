@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.toast {
+    z-index: 1050 !important; /* Ensure the toast appears above other elements */
+  }
+  
+  .toast-top-right {
+    top: 12px; /* Adjust position if needed */
+    right: 12px;
+  }
+  
+  .toast-message {
+    color: #fff !important; /* Ensure the text color is visible */
+  }
+  

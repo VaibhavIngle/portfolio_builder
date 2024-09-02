@@ -1,0 +1,94 @@
+{
+  "projects": [
+    {
+      "title": "E-commerce Platform",
+      "description": "A full-featured e-commerce platform with user authentication and payment gateway integration.",
+      "technologies": "Angular, Express, MongoDB",
+      "category": "Web Development",
+      "githubLink": "https://github.com/username/ecommerce-platform",
+      "liveDemo": "https://ecommerce.example.com",
+      "imageUrl": "https://framerusercontent.com/images/BtSOiu1CJrIjCK2LCNTsFwBj0wg.jpeg",
+      "id": "1"
+    },
+    {
+      "title": "Chat Applications",
+      "description": "A real-time chat application with support for multiple rooms and private messaging.",
+      "technologies": "Angular, Socket.io, Node.js",
+      "category": "Web Development",
+      "githubLink": "https://github.com/username/chat-application",
+      "liveDemo": "https://chat.example.com",
+      "imageUrl": "data:image/png;base64,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",
+      "id": "2"
+    },
+    {
+      "title": "Blog Platform",
+      "description": "A blogging platform with features for writing, editing, and commenting on posts.",
+      "technologies": "Django, Python, PostgreSQL",
+      "category": "Web Development",
+      "githubLink": "https://github.com/username/blog-platform",
+      "liveDemo": "https://blog.example.com",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJLFom4H_prPVoxldhpEZy63HD6rOnUH2ptg&s",
+      "id": "4"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "A dashboard for displaying weather information using real-time data from an API.",
+      "technologies": "React, Node.js",
+      "category": "Web Development",
+      "githubLink": "https://github.com/username/weather-dashboard",
+      "liveDemo": "https://weather.example.com",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu8IeMKdtd4O6W54my_P3-c8T5XsK5mNjAIQ&s",
+      "id": "5"
+    },
+    {
+      "title": "Task Manager",
+      "description": "An application for managing and organizing tasks with priority levels and deadlines.",
+      "technologies": "Vue.js, Firebase",
+      "category": "Web Development",
+      "githubLink": "https://github.com/username/task-manager",
+      "liveDemo": "https://tasks.example.com",
+      "imageUrl": "https://cdn.ttgtmedia.com/rms/onlineimages/sheldon_task_manager_screenshot_2-f_mobile.jpg",
+      "id": "6"
+    },
+    {
+      "title": "Recipe Finder",
+      "description": "An app to find and save recipes with search and filter options.",
+      "technologies": "Angular, Spring Boot",
+      "category": "Web Development",
+      "githubLink": "https://github.com/username/recipe-finder",
+      "liveDemo": "https://recipes.example.com",
+      "imageUrl": "https://i.ytimg.com/vi/ryqR4qLVeiY/maxresdefault.jpg",
+      "id": "7"
+    },
+    {
+      "title": "Expense Tracke",
+      "description": "A tool for tracking and managing personal expenses with charts and reports.",
+      "technologies": "React, Node.js",
+      "category": "Web Development",
+      "githubLink": "https://github.com/username/expense-tracker",
+      "liveDemo": "https://expenses.example.com",
+      "imageUrl": "https://images.ctfassets.net/0sppvm4cmdq7/78htrazWRNhQYr0ofs4pA1/8230f21c103f451a7be89e4984dce2db/Thumbnail_27.png",
+      "id": "8"
+    },
+    {
+      "title": "Fitness App",
+      "description": "A mobile app for tracking fitness activities and monitoring progress.",
+      "technologies": "Flutter, Firebase",
+      "category": "Mobile Development",
+      "githubLink": "https://github.com/username/fitness-app",
+      "liveDemo": "https://fitness.example.com",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9xwxmJTyjDARp4SRAebvRfnrpIap4CT7Nbw&s",
+      "id": "9"
+    },
+    {
+      "title": "Event Booking",
+      "description": "An application for booking and managing events with a calendar view.",
+      "technologies": "Vue.js, Firebase",
+      "category": "Web Development",
+      "githubLink": "https://github.com/username/event-booking",
+      "liveDemo": "https://events.example.com",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9VS6YWwwtQx9P1hQcTtXHRacNLzezTR3Cmg&s",
+      "id": "12"
+    }
+  ]
+}

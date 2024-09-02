@@ -1,0 +1,116 @@
+<div class="container mt-3">
+  <h2 class="mb-4 text-center text-primary">{{ isEditMode ? 'Update Project' : 'Create New Project' }}</h2>
+  
+  <form (ngSubmit)="onSubmit()" [formGroup]="projectForm" class="form-elegant">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        formControlName="title"
+        [ngClass]="{ 'is-invalid': projectForm.get('title')!.invalid && projectForm.get('title')!.touched }"
+        required
+      />
+      <div class="invalid-feedback" *ngIf="projectForm.get('title')!.invalid && projectForm.get('title')!.touched">
+        Title is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea
+        class="form-control"
+        id="description"
+        formControlName="description"
+        rows="4"
+        [ngClass]="{ 'is-invalid': projectForm.get('description')!.invalid && projectForm.get('description')!.touched }"
+        required
+      ></textarea>
+      <div class="invalid-feedback" *ngIf="projectForm.get('description')!.invalid && projectForm.get('description')!.touched">
+        Description is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="technologies">Technologies Used</label>
+      <input
+        type="text"
+        class="form-control"
+        id="technologies"
+        formControlName="technologies"
+        [ngClass]="{ 'is-invalid': projectForm.get('technologies')!.invalid && projectForm.get('technologies')!.touched }"
+        required
+      />
+      <div class="invalid-feedback" *ngIf="projectForm.get('technologies')!.invalid && projectForm.get('technologies')!.touched">
+        Technologies used is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select
+        class="form-control"
+        id="category"
+        formControlName="category"
+        [ngClass]="{ 'is-invalid': projectForm.get('category')!.invalid && projectForm.get('category')!.touched }"
+        required
+      >
+        <option value="" disabled>Select a category</option>
+        <option>Web Development</option>
+        <option>Data Science</option>
+      </select>
+      <div class="invalid-feedback" *ngIf="projectForm.get('category')!.invalid && projectForm.get('category')!.touched">
+        Category is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="githubLink">GitHub Link</label>
+      <input
+        type="url"
+        class="form-control"
+        id="githubLink"
+        formControlName="githubLink"
+        [ngClass]="{ 'is-invalid': projectForm.get('githubLink')!.invalid && projectForm.get('githubLink')!.touched }"
+        required
+      />
+      <div class="invalid-feedback" *ngIf="projectForm.get('githubLink')!.invalid && projectForm.get('githubLink')!.touched">
+        GitHub link is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="liveDemo">Live Demo Link</label>
+      <input
+        type="url"
+        class="form-control"
+        id="liveDemo"
+        formControlName="liveDemo"
+        [ngClass]="{ 'is-invalid': projectForm.get('liveDemo')!.invalid && projectForm.get('liveDemo')!.touched }"
+        required
+      />
+      <div class="invalid-feedback" *ngIf="projectForm.get('liveDemo')!.invalid && projectForm.get('liveDemo')!.touched">
+        Live demo link is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="imageUrl">Image URL</label>
+      <input
+        type="url"
+        class="form-control"
+        id="imageUrl"
+        formControlName="imageUrl"
+        [ngClass]="{ 'is-invalid': projectForm.get('imageUrl')!.invalid && projectForm.get('imageUrl')!.touched }"
+      />
+      <div class="invalid-feedback" *ngIf="projectForm.get('imageUrl')!.invalid && projectForm.get('imageUrl')!.touched">
+        Image URL is required.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg">
+      {{ isEditMode ? 'Update' : 'Create' }} Project
+    </button>
+  </form>
+</div>

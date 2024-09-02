@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <a class="navbar-brand font-weight-bold portfolio" routerLink="/home">Portfolio</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" [ngClass]="{'active': isActive('/home')}">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active': isActive('/projects')}">
+        <a class="nav-link" routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
